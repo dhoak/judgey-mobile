@@ -1,0 +1,29 @@
+<ion-view title="JUDGEY" hide-back-button="true">
+    <ion-content ng-controller="SignInCtrl" has-header="true" has-tabs="true" padding="true">
+
+        <h2>Welcome {{user.displayName}}</h2>
+
+        <div>
+            <img src="{{user.thirdPartyUserData.picture.data.url}}" />
+        </div>
+
+        <div class="card">
+            <!--{{user.accessToken}}-->
+        </div>
+
+        <div class="card">
+            {{user.thirdPartyUserData}}
+        </div>
+
+        <!--<div class="card">-->
+            <!--{{status}}-->
+        <!--</div>-->
+
+
+        <div class="card">
+            <!--{{photos}}-->
+        </div>
+
+        <button class="button button-full button-outline button-assertive" ng-click="logout()">Logout</button>
+    </ion-content>
+</ion-view>
